@@ -67,12 +67,12 @@ CHROMIUM_ARGS: List[str] = [
 # SCRAPER SETTINGS & SPONSORED FILTER
 # ==============================================================================
 DEFAULT_SEARCH_QUERY: str = "Real Estate Agencies in Dubai"
-DEFAULT_MAX_RESULTS: int = 50
+DEFAULT_MAX_RESULTS: int = 100
 DEFAULT_HEADLESS: bool = False  # Headed mode recommended for reliable Google Maps rendering
 PAGE_NAVIGATION_TIMEOUT_MS: int = 45000
 ELEMENT_WAIT_TIMEOUT_MS: int = 5000
-SCROLL_PAUSE_SECONDS: float = 2.0
-MAX_SCROLL_RETRIES: int = 6
+SCROLL_PAUSE_SECONDS: float = 2.5  # Slightly longer pause to allow Google Maps to load more results
+MAX_SCROLL_RETRIES: int = 15  # More retries needed to reach 100 results
 
 # Sponsored Ads Skipping Logic
 SKIP_SPONSORED: bool = True
