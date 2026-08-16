@@ -1,0 +1,36 @@
+# ──── Python ────
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ──── Virtual Environments ────
+venv/
+.venv/
+env/
+
+# ──── IDE / Editor ────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ──── Data & Runtime (user-generated) ────
+data/leads.db
+data/leads.db-wal
+data/leads.db-shm
+data/exports/*.xlsx
+data/logs/*.log
+data/*.png
+
+# ──── OS ────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ──── Debug / Scratch ────
+debug_scraper.py
